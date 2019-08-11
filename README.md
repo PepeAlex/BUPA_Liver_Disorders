@@ -31,7 +31,7 @@ Autoimmune conditions involve your immune system mistakenly attacking healthy ce
 
 https://www.healthline.com/health/liver-diseases
 
-## Liver desease aspect:
+## Liver disease aspect:
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/liver.png)
 https://theceliacscene.com/hepatic-manifestations-celiac-disease/
 
@@ -68,7 +68,10 @@ CMDER is a software package created out of pure frustration over the absence of 
 https://cmder.net/
 ### VSCODE
 Visual Studio Code – VSCode is a source-code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. https://en.wikipedia.org/wiki/Visual_Studio_Code  https://code.visualstudio.com/
-### CSV File - Data Set https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/
+### CSV File - Data Set 
+https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/
+### GITHUB
+GitHub is a Git repository hosting service, but it adds many of its own features. While Git is a command line tool, GitHub provides a Web-based graphical interface. It also provides access control and several collaboration features, such as a wikis and basic task management tools for every project. https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/?guccounter=1&guce_referrer_us=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_cs=QdRUp8Vpgm9JNIVT4qpoSA
 
 # Analysing
 > Firstly I downloaded the BUPA dataset from the website: https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/ ; and saved this file as "bupa.csv" in my computer. I opened the VSCode and I created a file called 0_bupa.py. I imported pandas library as "pd" and added column names to the data then I wrote a code _BUPA= pd.read_csv(("bupa.csv")_, names=names). See below:
@@ -309,9 +312,9 @@ import pandas as pd
       # plot the data
       plt.show()
  
-   ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/5_bupa.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/5_bupa.png)
    
-   > Now I decided to show the relation betwen numbers of "Drinks" vs each variables of blood test.
+> Now I decided to show the relation betwen numbers of "Drinks" vs each variables of blood test.
    import pandas as pd
 
       import seaborn as sns
@@ -341,11 +344,11 @@ import pandas as pd
       sns.boxplot(x="Drinks", y="GAMMAGT", data=BUPA)
       plt.show()
 
-   ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_MCV.png)
-   ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_ALPHOS.png)
-   ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_SGPT.png)
-   ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_SGOT.png)
-   ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_GAMMAGT.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_MCV.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_ALPHOS.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_SGPT.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_SGOT.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_GAMMAGT.png)
  
  > I used graphic type HISTOGRAM to also show my Data.
  
@@ -476,3 +479,29 @@ import pandas as pd
  ![Alt tet](https://github.com/PepeAlex/BUPA_Project/blob/writing/9_bupa_SGOT.png)
  ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/9_bupa_GAMMAGT.png)
  
+# Conclusion
+ 
+ >   BUPA Datase is  a research that use blood variables to desmontration Liver Disorder. I found some project about it in Data Science, but all this project are in early stage and I have not seen much information. In my project I tried to use every knowledge learnt in the first semestre of "Programming & Scripts" subject at GMIT.
+ >   Some of libraries of Python as "PANDAS", "MATPLOTLIB" and "SEABORN" are widely used in this project. PANDAS is a good tools to work with labell. MATPLOTLIB and SEABORN is a good tools to work with graphics and charts. I downloaded the data and saved it in type file CSV and I used this libraries to extracting it.
+ >   For myself this project is a challenge because every subject in IT is new and I had to have more pay attention because my previous degree is in Science and my focus was not in blood variables but in how to manipulate and show the data. I have learnt each IT subject separately and after get all knowledge together to finalized and made presentations it in GITHub site. For this project I needed to understand the dataset, how to manipulating it and which type of graphics have I chose.
+ 
+# References
+ 1 - Liver Introduction - https://www.healthline.com/health/what-does-the-liver-do
+ 2 - Liver Problems - https://www.healthline.com/health/liver-diseases
+ 3 - Liver Disease picture - https://theceliacscene.com/hepatic-manifestations-celiac-disease/
+ 4 - BUPA Dataset definition - https://www.openml.org/d/8
+ 5 - MCV definition -  https://medlineplus.gov/lab-tests/mcv-mean-corpuscular-volume/
+ 6 - ALKPHOS definition - https://labtestsonline.org/tests/alkaline-phosphatase-alp#
+ 7 - SGPT definition - https://www.rxlist.com/script/main/art.asp?articlekey=6321
+ 8 - SGOT definition -  https://www.rxlist.com/script/main/art.asp?articlekey=6320 
+ 9 - GAMMAGT definition - http://www.irishhealth.com/askdoc.html?q=6201 
+10 - Drinks definition -  https://www.openml.org/d/8
+11 - Field definition - https://www.openml.org/d/8
+12 - Python - https://www.python.org/doc/essays/blurb/
+13 - Matplotlib - https://matplotlib.org/
+14 - Pandas - https://pandas.pydata.org/
+15 - Seaborn -  https://seaborn.pydata.org/
+16 - CMDER -  https://cmder.net/
+17 - VSCODE -  https://en.wikipedia.org/wiki/Visual_Studio_Code https://code.visualstudio.com/
+18 - BUPA Dataset -  https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/
+19 - GITHUB - https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/?guccounter=1&guce_referrer_us=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_cs=QdRUp8Vpgm9JNIVT4qpoSA
