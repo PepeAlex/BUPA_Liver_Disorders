@@ -31,8 +31,9 @@ Autoimmune conditions involve your immune system mistakenly attacking healthy ce
 
 https://www.healthline.com/health/liver-diseases
 
-Liver illness aspect:
-picture Liver
+## Liver desease aspect:
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/liver.png)
+https://theceliacscene.com/hepatic-manifestations-celiac-disease/
 
 # BUPA
 
@@ -62,16 +63,20 @@ To complete this project I used some programmes and their libraries. Below is de
       - Matplotlib: is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits. https://matplotlib.org/
       - Pandas: is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Pandas is a NumFOCUS sponsored project. This will help ensure the success of development of pandas as a world-class open-source project, and makes it possible to donate to the project. https://pandas.pydata.org/
       - 	Seaborn: is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. https://seaborn.pydata.org/
-   - CMDER is a software package created out of pure frustration over the absence of nice console emulators on Windows. It is based on amazing software, and spiced up with the Monokai color scheme and a custom prompt layout, looking sexy from the start.
+- CMDER is a software package created out of pure frustration over the absence of nice console emulators on Windows. It is based on amazing software, and spiced up with the Monokai color scheme and a custom prompt layout, looking sexy from the start.
 https://cmder.net/
-   - Visual Studio Code – VSCode is a source-code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. https://en.wikipedia.org/wiki/Visual_Studio_Code  https://code.visualstudio.com/
-   - CSV File - Data Set https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/
+- Visual Studio Code – VSCode is a source-code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. https://en.wikipedia.org/wiki/Visual_Studio_Code  https://code.visualstudio.com/
+- CSV File - Data Set https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/
 
 # Analysing
 > Firstly I downloaded the BUPA dataset from the website: https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/ ; and saved this file as "bupa.csv" in my computer. I opened the VSCode and I created a file called 0_bupa.py. I imported pandas library as "pd" and added column names to the data then I wrote a code _BUPA= pd.read_csv(("bupa.csv")_, names=names). See below:
 
-fig. 0_bupa_1
+      import pandas as pd
+      # extracting BUPA data and adding names to it.
+      names = ['MCV','ALKPHOS','SGPT','SGOT','GAMMAGT','Drinks Numbers','Field']
+      BUPA = pd.read_csv(("bupa.csv"), names=names)
 
+      print(BUPA)
 
 > Below I wrote some Python Script about BUPA Liver Dataset in brief:
 
@@ -111,6 +116,139 @@ fig. 0_bupa_1
 
 7. _Column_, column names of the data.
 
-fg 1_bupa
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/1_bupa.png)
 
+# Statistic
 
+> In this part of my project I wrote some Python Scripts to show how to manupulate the data using "pandas library". I used "loc function" to find a "mean" of each variables and for each variables per "Field". Also I used "iloc function" to divide the data in three parts and find the "mean" for each parts. For that I separeted tha data in 0 to 115, 115 to 230 and 230 to 345.
+
+      import pandas as pd
+
+      # extracting BUPA data and adding names to it.
+      names = ['MCV','ALKPHOS','SGPT','SGOT','GAMMAGT','Drinks Numbers','Field']
+      BUPA = pd.read_csv(("bupa.csv"), names=names)
+
+      print("Mean of MCV is", BUPA["MCV"].mean())
+      print("Mean of Alkphos is", BUPA["ALKPHOS"].mean())
+      print("Mean of SGTP is", BUPA["SGPT"].mean())
+      print("Mean of SGOT is", BUPA["SGOT"].mean())
+      print("Mean of GAMMAGT is", BUPA["GAMMAGT"].mean())
+      print("Mean of Drinks Numbers is", BUPA["Drinks Numbers"].mean())
+      print("\n")
+
+      group = BUPA.groupby("Field")
+
+      print("Mean of all 2 Field")
+      print(group.mean())
+      print("\n")
+
+      print("Finding mean of Fields using 'loc' function", "\n")
+      print("Mean of Field 1")
+      print(BUPA.loc[BUPA["Field"]== 1].mean())  # mean of Field 1 using loc function
+      print("\n")
+      print("Mean of Field 2")
+      print(BUPA.loc[BUPA["Field"]== 2].mean()) # mean of Field 2 using loc function
+      print("\n")
+
+      print("Finding mean of variables using 'iloc' function", "\n")
+      print("Mean of Variances")
+      print(BUPA.iloc[0:115].mean()) # mean of variables using iloc function
+      print("\n")
+      print("Mean of Variances")
+      print(BUPA.iloc[115:230].mean()) # mean of variables using iloc function
+      print("\n")
+      print("Mean of Variances")
+      print(BUPA.iloc[230:345].mean()) # mean of variables using iloc function
+
+> Above is the result by CMDER
+
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/2_bupa.png)
+
+> Following the subject I used the data to describe some statistic features as MEAN, MIN, MAX, MEDIAN and MODE, and at least I used it to show each statistic features by each "FIELD".
+
+      import pandas as pd
+
+      # extracting BUPA data and adding names to it.
+      names = ['MCV','ALKPHOS','SGPT','SGOT','GAMMAGT','Drinks','Field']
+      BUPA = pd.read_csv(("bupa.csv"), names=names)
+
+      print("Mean of MCV is", BUPA["MCV"].mean())
+      print("Mean of Alkphos is", BUPA["ALKPHOS"].mean())
+      print("Mean of SGPT is", BUPA["SGPT"].mean())
+      print("Mean of SGOT is", BUPA["SGOT"].mean())
+      print("Mean of GammaGT is", BUPA["GAMMAGT"].mean())
+      print("Mean of Drinks is", BUPA["Drinks"].mean())
+      print("Mean of Field is", BUPA["Field"].mean())
+      print("\n")
+
+      # finding the max value of each variable
+      print("Max value of MCV is", BUPA["MCV"].max())
+      print("Max value of Alkphos is", BUPA["ALKPHOS"].max())
+      print("Max value of SGPT is", BUPA["SGPT"].max())
+      print("Max value of SGOT is", BUPA["SGOT"].max())
+      print("Max value of GammaGT is", BUPA["GAMMAGT"].max())
+      print("Max value of Drinks is", BUPA["Drinks"].max())
+      print("Max value of Field is", BUPA["Field"].max())
+      print("\n")
+
+      # finding the min value of each variable
+      print("Min value of MCV is", BUPA["MCV"].min())
+      print("Min value of Alkphos is", BUPA["ALKPHOS"].min())
+      print("Min value of SGPT is", BUPA["SGPT"].min())
+      print("Min value of SGOT is", BUPA["SGOT"].min())
+      print("Min value of GammaGT is", BUPA["GAMMAGT"].min())
+      print("Min value of Drinks is", BUPA["Drinks"].min())
+      print("Min value of Field is", BUPA["Field"].min())
+      print("\n")
+
+      # finding the median of each variable
+      print("Median of MCV is", BUPA["MCV"].median())
+      print("Median of Alkphos is", BUPA["ALKPHOS"].median())
+      print("Median of SGPT is", BUPA["SGPT"].median())
+      print("Median of SGOT is", BUPA["SGOT"].median())
+      print("Median of GammaGT is", BUPA["GAMMAGT"].median())
+      print("Median of Drinks is", BUPA["Drinks"].median())
+      print("Median of Field is", BUPA["Field"].median())
+      print("\n")
+
+      # finding the mode of each variable
+      print("Mode of MCV is", BUPA["MCV"].mode())
+      print("\n")
+      print("Mode of Alkphos is", BUPA["ALKPHOS"].mode())
+      print("\n")
+      print("Mode of SGPT is", BUPA["SGPT"].mode())
+      print("\n")
+      print("Mode of SGOT is", BUPA["SGOT"].mode())
+      print("\n")
+      print("Mode of GammaGT is", BUPA["GAMMAGT"].mode())
+      print("\n")
+      print("Mode of Drinks is", BUPA["Drinks"].mode())
+      print("\n")
+      print("Mode of Field is", BUPA["Field"].mode())
+      print("\n")
+
+      # group the BUPA dataset by the Field column
+      group = BUPA.groupby("Field")
+
+      # find the mean of each variable for all 2 Field
+      print("Mean of all 2 Field")
+      print(group.mean())
+      print("\n")
+
+      # find the max value of each variable for all 2 species
+      print("Max value of all 2 Field")
+      print(group.max())
+      print("\n")
+
+      # find the min value of each variable for all 2 species
+      print("Min value of all 2 Field")
+      print(group.min())
+      print("\n")
+
+      # find the median of each variable for all 2 species
+      print("Median of all 2 Field")
+      print(group.median())
+      print("\n")
+
+> The result by CMDER:
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/3_bupa.png)
