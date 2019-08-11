@@ -62,7 +62,7 @@ To complete this project I used some programmes and their libraries. Below is de
    - Python Libraries:
       - Matplotlib: is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits. https://matplotlib.org/
       - Pandas: is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Pandas is a NumFOCUS sponsored project. This will help ensure the success of development of pandas as a world-class open-source project, and makes it possible to donate to the project. https://pandas.pydata.org/
-      - 	Seaborn: is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. https://seaborn.pydata.org/
+      - Seaborn: is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. https://seaborn.pydata.org/
 ### CMDER
 CMDER is a software package created out of pure frustration over the absence of nice console emulators on Windows. It is based on amazing software, and spiced up with the Monokai color scheme and a custom prompt layout, looking sexy from the start.
 https://cmder.net/
@@ -254,3 +254,59 @@ Visual Studio Code – VSCode is a source-code editor developed by Microsoft for
 
 > The result by CMDER:
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/3_bupa.png)
+
+> One more type of statistical utilazed was "pivot function". It is exceedingly useful, and use the syntax to format the output needed. In this code I described each column divide by "Field" and list the count in each "Field", the mean, the standard deviation, MIN, MAX, and 25%th, 50%th and 75%th percentiles' of each numeric columns.
+import pandas as pd
+
+      # extracting BUPA data and adding names to it.
+      names = ['MCV','ALKPHOS','SGPT','SGOT','GAMMAGT','Drinks','Field']
+      BUPA = pd.read_csv(("bupa.csv"), names=names)
+
+      # pivoting the dataset with describe method based on the variable column
+      print("Pivot the dataframe based on the values in the 'MCV' column", "\n")
+      print(BUPA.pivot(columns='Field', values='MCV').describe(), "\n")
+      print("Pivot the dataframe based on the values in the 'Alkphos' column", "\n")
+      print(BUPA.pivot(columns='Field', values='ALKPHOS').describe(), "\n")
+      print("Pivot the dataframe based on the values in the 'SGPT' column", "\n")
+      print(BUPA.pivot(columns='Field', values='SGPT').describe(), "\n")
+      print("Pivot the dataframe based on the values in the 'SGOT' column", "\n")
+      print(BUPA.pivot(columns='Field', values='SGOT').describe(), "\n")
+      print("Pivot the dataframe based on the values in the 'GammaGT' column", "\n")
+      print(BUPA.pivot(columns='Field', values='GAMMAGT').describe(), "\n")
+      print("Pivot the dataframe based on the values in the 'Drinks' column", "\n")
+      print(BUPA.pivot(columns='Field', values='Drinks').describe(), "\n")
+      print("Pivot the dataframe based on the values in the 'Field' column", "\n")
+      print(BUPA.pivot(columns='Field', values='Field').describe(), "\n")
+
+      # describe entire dataset for all Field
+      print("Describe the entire dataframe", "\n")
+      print(BUPA.describe(), "\n")
+
+> This code produce answers:
+
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/4_bupa.png)
+
+# Graphic
+
+> This section of my project I built some graphics to describe easylly my BUPA Dataset and for that I used Pandas Library, Matplolib Library and Seaborn. The first graphic is general visualization about the data.
+
+      import pandas as pd
+      import matplotlib.pyplot as plt
+      import seaborn as sns
+
+      # extracting BUPA data and adding names to it.
+      names = ['MCV','ALKPHOS','SGPT','SGOT','GAMMAGT','Drinks','Field']
+      BUPA = pd.read_csv(("bupa.csv"), names=names)
+
+      # set the boxplot graph for BUPA
+      plt.figure(figsize = (10, 8)) # set the graph size
+      plt.title("BUPA dataset variables") # title of the plot
+
+      # set the boxplot style
+      sns.set(style="darkgrid", color_codes=True) # set the background colour
+      sns.boxplot(data=BUPA) # set the dataset to plot
+
+      # plot the data
+      plt.show()
+ 
+   ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/5_bupa.png)
