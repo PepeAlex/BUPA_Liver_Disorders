@@ -481,27 +481,30 @@ import pandas as pd
  
 # Conclusion
  
- >   BUPA Datase is  a research that use blood variables to desmontration Liver Disorder. I found some project about it in Data Science, but all this project are in early stage and I have not seen much information. In my project I tried to use every knowledge learnt in the first semestre of "Programming & Scripts" subject at GMIT.
- >   Some of libraries of Python as "PANDAS", "MATPLOTLIB" and "SEABORN" are widely used in this project. PANDAS is a good tools to work with labell. MATPLOTLIB and SEABORN is a good tools to work with graphics and charts. I downloaded the data and saved it in type file CSV and I used this libraries to extracting it.
- >   For myself this project is a challenge because every subject in IT is new and I had to have more pay attention because my previous degree is in Science and my focus was not in blood variables but in how to manipulate and show the data. I have learnt each IT subject separately and after get all knowledge together to finalized and made presentations it in GITHub site. For this project I needed to understand the dataset, how to manipulating it and which type of graphics have I chose.
+BUPA Datase is  a research that use blood variables to desmontration Liver Disorder. I found some project about it in Data Science, but all this project are in early stage and I have not seen much information. In my project I tried to use every knowledge learnt in the first semestre of "Programming & Scripts" subject at GMIT.
+
+Some of libraries of Python as "PANDAS", "MATPLOTLIB" and "SEABORN" are widely used in this project. PANDAS is a good tools to work with labell. MATPLOTLIB and SEABORN is a good tools to work with graphics and charts. I downloaded the data and saved it in type file CSV and I used this libraries to extracting it.
+
+For myself this project is a challenge because every subject in IT is new and I had to have more pay attention because my previous degree is in Science and my focus was not in blood variables but in how to manipulate and show the data. I have learnt each IT subject separately and after get all knowledge together to finalized and made presentations it in GITHub site. For this project I needed to understand the dataset, how to manipulating it and which type of graphics have I chose.
  
 # References
- 1 - Liver Introduction - https://www.healthline.com/health/what-does-the-liver-do
- 2 - Liver Problems - https://www.healthline.com/health/liver-diseases
- 3 - Liver Disease picture - https://theceliacscene.com/hepatic-manifestations-celiac-disease/
- 4 - BUPA Dataset definition - https://www.openml.org/d/8
- 5 - MCV definition -  https://medlineplus.gov/lab-tests/mcv-mean-corpuscular-volume/
- 6 - ALKPHOS definition - https://labtestsonline.org/tests/alkaline-phosphatase-alp#
- 7 - SGPT definition - https://www.rxlist.com/script/main/art.asp?articlekey=6321
- 8 - SGOT definition -  https://www.rxlist.com/script/main/art.asp?articlekey=6320 
- 9 - GAMMAGT definition - http://www.irishhealth.com/askdoc.html?q=6201 
-10 - Drinks definition -  https://www.openml.org/d/8
-11 - Field definition - https://www.openml.org/d/8
-12 - Python - https://www.python.org/doc/essays/blurb/
-13 - Matplotlib - https://matplotlib.org/
-14 - Pandas - https://pandas.pydata.org/
-15 - Seaborn -  https://seaborn.pydata.org/
-16 - CMDER -  https://cmder.net/
-17 - VSCODE -  https://en.wikipedia.org/wiki/Visual_Studio_Code https://code.visualstudio.com/
-18 - BUPA Dataset -  https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/
-19 - GITHUB - https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/?guccounter=1&guce_referrer_us=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_cs=QdRUp8Vpgm9JNIVT4qpoSA
+
+1. Liver Introduction - https://www.healthline.com/health/what-does-the-liver-do
+2. Liver Problems - https://www.healthline.com/health/liver-diseases
+3. Liver Disease picture - https://theceliacscene.com/hepatic-manifestations-celiac-disease/
+4. BUPA Dataset definition - https://www.openml.org/d/8
+5. MCV definition -  https://medlineplus.gov/lab-tests/mcv-mean-corpuscular-volume/
+6. ALKPHOS definition - https://labtestsonline.org/tests/alkaline-phosphatase-alp#
+7. SGPT definition - https://www.rxlist.com/script/main/art.asp?articlekey=6321
+8. SGOT definition -  https://www.rxlist.com/script/main/art.asp?articlekey=6320 
+9. GAMMAGT definition - http://www.irishhealth.com/askdoc.html?q=6201 
+10. Drinks definition -  https://www.openml.org/d/8
+11. Field definition - https://www.openml.org/d/8
+12. Python - https://www.python.org/doc/essays/blurb/
+13. Matplotlib - https://matplotlib.org/
+14. Pandas - https://pandas.pydata.org/
+15. Seaborn -  https://seaborn.pydata.org/
+16. CMDER -  https://cmder.net/
+17. VSCODE -  https://en.wikipedia.org/wiki/Visual_Studio_Code https://code.visualstudio.com/
+18. BUPA Dataset -  https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/
+19. GITHUB - https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/?guccounter=1&guce_referrer_us=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_cs=QdRUp8Vpgm9JNIVT4qpoSA
