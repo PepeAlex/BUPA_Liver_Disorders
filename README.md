@@ -310,3 +310,37 @@ import pandas as pd
       plt.show()
  
    ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/5_bupa.png)
+   
+   > Now I decided to show the relation betwen numbers of "Drinks" vs each variables of blood test.
+   import pandas as pd
+
+      import seaborn as sns
+      import matplotlib.pyplot as plt
+
+      # extracting BUPA data and adding names to it.
+      names = ['MCV','ALKPHOS','SGPT','SGOT','GAMMAGT','Drinks','Field']
+      BUPA = pd.read_csv(("bupa.csv"), names=names)
+
+      # boxplot MCV vs Drinks
+      sns.boxplot(x="Drinks", y="MCV", data=BUPA)
+      plt.show()
+
+      # boxplot ALKPHOS vs Drinks
+      sns.boxplot(x="Drinks", y="ALKPHOS", data=BUPA)
+      plt.show()
+
+      # boxplot SGPT vs Drinks
+      sns.boxplot(x="Drinks", y="SGPT", data=BUPA)
+      plt.show()
+
+      # boxplot SGOT vs Drinks
+      sns.boxplot(x="Drinks", y="SGOT", data=BUPA)
+      plt.show()
+
+      # boxplot GAMMAGT vs Drinks
+      sns.boxplot(x="Drinks", y="GAMMAGT", data=BUPA)
+      plt.show()
+
+   ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_MCV.png)![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_ALPHOS.png)
+   
+   
