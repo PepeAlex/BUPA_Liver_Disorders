@@ -409,3 +409,70 @@ import pandas as pd
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/7_bupa_GAMMAGT.png)
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/7_bupa_Drinks.png)
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/7_bupa_field.png)
+
+> I appresented one more HISTOGRAM, but now they are together in the same code.
+
+      import pandas as pd
+      import seaborn as sns
+      import matplotlib.pyplot as plt
+
+      # extracting BUPA data and adding names to it.
+      names = ['MCV','ALKPHOS','SGPT','SGOT','GAMMAGT','Drinks','Field']
+      BUPA = pd.read_csv(("bupa.csv"), names=names)
+
+      # set the backround colur of the histogram graph
+      sns.set(style="whitegrid")
+
+      # set the bar colour, figure size and bin size of the graphs
+      BUPA.hist(color = "red", figsize = (12, 8), bins = 18)
+      # plot the graph
+      plt.show()
+
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/8_bupa.png)
+
+> At least I manipuleted my Data and use SCATTER PLOT to show it per numbers of field and Drinks vs Blood variables.
+
+      import pandas as pd
+      import seaborn as sns
+      import matplotlib.pyplot as plt
+
+      # extracting BUPA data and adding names to it.
+      names = ['MCV','ALKPHOS','SGPT','SGOT','GAMMAGT','Drinks','Field']
+      BUPA = pd.read_csv(("bupa.csv"), names=names)
+
+      # set the key parameters for the MCV vs Drinks scatter plot
+      ax = sns.scatterplot(x="MCV", y="Drinks", hue="Field", data=BUPA)
+      # set the title of the scatter plot
+      plt.title("Scatter Plot - 'MCV vs Drinks' of all 2 Fields")
+      plt.show()
+
+      # set the key parameters for the ALKPHOS vs Drinks scatter plot
+      ax = sns.scatterplot(x="ALKPHOS", y="Drinks", hue="Field", data=BUPA)
+      # set the title of the scatter plot
+      plt.title("Scatter Plot - 'ALKPHOS vs Drinks' of all 2 Fields")
+      plt.show()
+
+      # set the key parameters for the SGPT vs Drinks scatter plot
+      ax = sns.scatterplot(x="SGPT", y="Drinks", hue="Field", data=BUPA)
+      # set the title of the scatter plot
+      plt.title("Scatter Plot - 'SGPT vs Drinks' of all 2 Fields")
+      plt.show()
+
+      # set the key parameters for the SGOT vs Drinks scatter plot
+      ax = sns.scatterplot(x="SGOT", y="Drinks", hue="Field", data=BUPA)
+      # set the title of the scatter plot
+      plt.title("Scatter Plot - 'SGOT vs Drinks' of all 2 Fields")
+      plt.show()
+
+      # set the key parameters for the GAMMAGT vs Drinks scatter plot
+      ax = sns.scatterplot(x="GAMMAGT", y="Drinks", hue="Field", data=BUPA)
+      # set the title of the scatter plot
+      plt.title("Scatter Plot - 'GAMMAGT vs Drinks' of all 2 Fields")
+      plt.show()
+      
+ ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/9_bupa_MCV.png)
+ ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/9_bupa_ALPHOS.png)
+ ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/9_bupa_SGPT.png)
+ ![Alt tet](https://github.com/PepeAlex/BUPA_Project/blob/writing/9_bupa_SGOT.png)
+ ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/9_bupa_GAMMAGT.png)
+ 
