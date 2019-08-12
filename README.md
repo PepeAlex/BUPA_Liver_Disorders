@@ -258,6 +258,7 @@ GitHub is a Git repository hosting service, but it adds many of its own features
       print("\n")
 
 > The result by CMDER:
+
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/3_bupa.png)
 
 > One more type of statistic utilized was "pivot function". It is exceedingly useful, and uses the syntax to format the output needed. In this code, I described each column divided by "Field" and listed the count in each "Field", the mean, the standard deviation, MIN, MAX, and 25%th, 50%th and 75%th percentiles' of each numeric columns.
