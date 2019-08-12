@@ -5,29 +5,29 @@
 ### Module: Programming & Scripting - 1º sem/2019
 ### Author: Alexander Pepe
 
-> This repository is a research about the BUPA dataset and its importance. I wrote some Python codes to demonstrate more easily and more didactically this dataset and finally summarise it with our findings and conclusion.. This project is part of the discipline of Programming & Scripting the semester end at GMIT.
+> This paper is research about the BUPA Liver Disorders dataset and its importance. I have written some Python codes to demonstrate this dataset more easily and more didactically. Finally, I will summarise my findings and present my conclusion. This project is part of the semester end requirement in the discipline of Programming & Scripting at GMIT.
 
 
-> This project is avaiable on https://github.com/PepeAlex/BUPA_Project . If you want to try it as Programer, you will need to install some of programms and your libraries.
+> This project is avaiable at https://github.com/PepeAlex/BUPA_Project. In order to try it as a programer, some programms and libraries will need to be installed.
 
 # INTRODUCTION
 
-   Your liver is an important organ that performs hundreds of tasks related to metabolism, energy storage, and detoxification of waste. It helps you digest food, convert it to energy, and store the energy until you need it. It also helps filter toxic substances out of your bloodstream.
+The liver is an important organ that performs hundreds of tasks related to metabolism, energy storage, and detoxification of waste. It helps to digest food, convert it to energy, and store the energy until needed. It also helps to filter toxic substances out of the bloodstream.
    
-   Liver disease is a general term that refers to any condition affecting your liver. These conditions may develop for different reasons, but they can all damage your liver and impact its function. https://www.healthline.com/health/what-does-the-liver-do .
+Liver disease is a general term that refers to any condition affecting the liver. These conditions may develop for different reasons, but they can all damage the liver and impact its function. https://www.healthline.com/health/what-does-the-liver-do .
    
 ## WHAT ARE SOME COMMON LIVER PROBLEMS?
 
-Many conditions can affect your liver. Here is a look at some of the main ones.
+Many conditions can affect the liver. Here is a summary of some of the main ones.
 
 - ### Hepatitis
-Hepatitis is a viral infection of your liver. It causes inflammation and liver damage, making it difficult for your liver to function as it should. 
+Hepatitis is a viral infection of the liver. It causes inflammation and liver damage, making it difficult for the liver to function as it should. 
 
 - ### Fatty liver disease
-Fatty liver is also known as hepatic steatosis. It happens when fat builds up in the liver. Having small amounts of fat in your liver is normal, but too much can become a health problem. One of the primary causes is too much Alcoholic.
+Fatty liver is also known as hepatic steatosis. It happens when fat builds up in the liver. Having small amounts of fat in the liver is normal, but too much can become a health problemç one of the primary causes is too much alcohol.
 
 - ### Autoimmune Conditions
-Autoimmune conditions involve your immune system mistakenly attacking healthy cells in your body. 
+Autoimmune conditions involve the immune system mistakenly attacking healthy cells in the body. 
 
 https://www.healthline.com/health/liver-diseases
 
@@ -37,44 +37,44 @@ https://theceliacscene.com/hepatic-manifestations-celiac-disease/
 
 # BUPA
 
-BUPA Liver Disorders dataset was created by BUPA Medical Research Ltd in May fifteenth of nineteen ninety and the heard of this project was Richard S. Forsyth. This project collected samples of 345 male patients and were analysing 7 variables being 5 in blood tests 1 of drinks numbers por day and 1 field, created by BUPA researchers. https://www.openml.org/d/8
+The BUPA Liver Disorders dataset was created by BUPA Medical Research Ltd on May 15, 1990ç the heard of this project was Richard S. Forsyth. This project collected samples of 345 male patients and analysed seven variables created by BUPA researchers: five "blood" (blood tests), one "drinks" (number of drinks per day), and one "field" (train versus test results) . https://www.openml.org/d/8
 
 ### Variables information:
-1- MCV - _Mean Corpuscular Volume_. An MCV blood test measures the average size of your red blood cells, also known as erythrocytes. https://medlineplus.gov/lab-tests/mcv-mean-corpuscular-volume/
+1- MCV - _Mean Corpuscular Volume_. An MCV blood test measures the average size of red blood cells, also known as erythrocytes. https://medlineplus.gov/lab-tests/mcv-mean-corpuscular-volume/
 
 2- ALKPHOS – _Alkaline Phosphatase_ (ALP) is an enzyme found in several tissues throughout the body. The highest concentrations of ALP are present in the cells that comprise bone and the liver. https://labtestsonline.org/tests/alkaline-phosphatase-alp#
 
-3- SGTP - _Sérum glutamic pyruvic transaminase_. An enzyme that is normally present in liver and heart cells. SGPT is released into blood when the liver or heart are damaged. https://www.rxlist.com/script/main/art.asp?articlekey=6321
+3- SGTP - _Sérum glutamic pyruvic transaminase_. An enzyme that is normally present in liver and heart cells. SGPT is released into the blood when the liver or heart is damaged. https://www.rxlist.com/script/main/art.asp?articlekey=6321
 
-4- SGOT - _Sérum glutamic oxaloacetic transaminase_. An enzyme that is normally present in liver and heart cells. SGOT is released into blood when the liver or heart is damaged. https://www.rxlist.com/script/main/art.asp?articlekey=6320
+4- SGOT - _Sérum glutamic oxaloacetic transaminase_. An enzyme that is normally present in liver and heart cells, SGOT is released into the blood when the liver or heart is damaged. https://www.rxlist.com/script/main/art.asp?articlekey=6320
 
-5- Gamma GT - _glutamytransferase_. An enzyme found in liver cells and the biliary tract. It is a very sensitive indicator of abnormality in the liver or bile duct system. http://www.irishhealth.com/askdoc.html?q=6201
+5- Gamma GT - _glutamytransferase_. An enzyme found in liver cells and the biliary tract, it is a very sensitive indicator of abnormality in the liver or bile duct system. http://www.irishhealth.com/askdoc.html?q=6201
 
 6- _DRINKS_ - number of half-pint equivalents of alcoholic beverages drunk per day. https://www.openml.org/d/8
 
 7- _FIELD_ - selector field created by the BUPA researchers to split the data into train/test sets. https://www.openml.org/d/8
 
 # DESCRIPTION
-To complete this project I used some programmes and their libraries. Below is described a little of each of them.
+To complete this project, I have used some programmes and their libraries; below is a short description of each.
 
 ### PYTHON
-- Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. https://www.python.org/doc/essays/blurb/
+- Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level, built-in data structures, combined with dynamic typing and dynamic binding, make it very attractive for rapid application development, as well as for use as a scripting or glue language to connect existing components together. https://www.python.org/doc/essays/blurb/
    - Python Libraries:
-      - Matplotlib: is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits. https://matplotlib.org/
+      - Matplotlib: is a Python 2D plotting library which produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, Python and IPython shells, Jupyter notebook, web application servers, and four graphical user interface toolkits. https://matplotlib.org/
       - Pandas: is an open source, BSD-licensed library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language. Pandas is a NumFOCUS sponsored project. This will help ensure the success of development of pandas as a world-class open-source project, and makes it possible to donate to the project. https://pandas.pydata.org/
       - Seaborn: is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. https://seaborn.pydata.org/
 ### CMDER
-CMDER is a software package created out of pure frustration over the absence of nice console emulators on Windows. It is based on amazing software, and spiced up with the Monokai color scheme and a custom prompt layout, looking sexy from the start.
+CMDER is a software package created out of the absence of suitable console emulators in Windows. It is based on quality software, with a Monokai color scheme and a custom prompt layout.
 https://cmder.net/
 ### VSCODE
 Visual Studio Code – VSCode is a source-code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. https://en.wikipedia.org/wiki/Visual_Studio_Code  https://code.visualstudio.com/
 ### CSV File - Data Set 
 https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/
 ### GITHUB
-GitHub is a Git repository hosting service, but it adds many of its own features. While Git is a command line tool, GitHub provides a Web-based graphical interface. It also provides access control and several collaboration features, such as a wikis and basic task management tools for every project. https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/?guccounter=1&guce_referrer_us=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_cs=QdRUp8Vpgm9JNIVT4qpoSA
+GitHub is a Git repository hosting service, but it adds many of its own features; while Git is a command line tool, GitHub provides a Web-based graphical interface. It also provides access control and several collaboration features, such as a wikis and basic task management tools for every project. https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/?guccounter=1&guce_referrer_us=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_cs=QdRUp8Vpgm9JNIVT4qpoSA
 
 # Analysing
-> Firstly I downloaded the BUPA dataset from the website: https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/ ; and saved this file as "bupa.csv" in my computer. I opened the VSCode and I created a file called 0_bupa.py. I imported pandas library as "pd" and added column names to the data then I wrote a code _BUPA= pd.read_csv(("bupa.csv")_, names=names). See below:
+> Firstly, I downloaded the BUPA dataset from the website: https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/ ; and saved this file as "bupa.csv" on my computer. I opened the VSCode and created a file called 0_bupa.py. I imported the pandas library as "pd" and added column names to the data; then I wrote a code _BUPA= pd.read_csv(("bupa.csv")_, names=names). See below:
 
       import pandas as pd
       # extracting BUPA data and adding names to it.
@@ -83,7 +83,7 @@ GitHub is a Git repository hosting service, but it adds many of its own features
 
       print(BUPA)
 
-> Below I wrote some Python Script about BUPA Liver Dataset in brief:
+> Below, I wrote some Python Script about the BUPA Liver Dataset. In brief:
 
       # extracting BUPA data and adding names to it.
       names = ['MCV','ALKPHOS','SGPT','SGOT','GAMMAGT','Drinks Numbers','Field']
@@ -105,7 +105,7 @@ GitHub is a Git repository hosting service, but it adds many of its own features
       print("-" * 95)
       print((BUPA.columns), "\n") # column names of the dataset
       
-> This is the result of my code and contains a general brief respectively:
+> This is the result of my code and contains a general brief. Respectively:
 
 1. _BUPA Information_ contain names and numbers of variables, numbers of samples, datatype used in each column and memory usage.
 
@@ -125,7 +125,7 @@ GitHub is a Git repository hosting service, but it adds many of its own features
 
 # Statistic
 
-> In this part of my project I wrote some Python Scripts to show how to manupulate the data using "pandas library". I used "loc function" to find a "mean" of each variables and for each variables per "Field". Also I used "iloc function" to divide the data in three parts and find the "mean" for each parts. For that I separeted tha data in 0 to 115, 115 to 230 and 230 to 345.
+> In this part of my project, I wrote some Python Scripts to show how to manupulate the data using pandas library. I used "loc function" to find a "mean" of each variables and for each variable per "Field". Also I used "iloc function" to divide the data into three parts and find the "mean" for each parts. For that, I separeted tha data into 0 to 115, 115 to 230 and 230 to 345 samples.
 
       import pandas as pd
 
@@ -169,7 +169,7 @@ GitHub is a Git repository hosting service, but it adds many of its own features
 
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/2_bupa.png)
 
-> Following the subject I used the data to describe some statistic features as MEAN, MIN, MAX, MEDIAN and MODE, and at least I used it to show each statistic features by each "FIELD".
+> Following the subject, I used the data to describe some statistical features such as MEAN, MIN, MAX, MEDIAN and MODE, and lastly, I used it to show each statistic features by each "FIELD".
 
       import pandas as pd
 
@@ -258,7 +258,7 @@ GitHub is a Git repository hosting service, but it adds many of its own features
 > The result by CMDER:
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/3_bupa.png)
 
-> One more type of statistical utilazed was "pivot function". It is exceedingly useful, and use the syntax to format the output needed. In this code I described each column divide by "Field" and list the count in each "Field", the mean, the standard deviation, MIN, MAX, and 25%th, 50%th and 75%th percentiles' of each numeric columns.
+> One more type of statistic utilized was "pivot function". It is exceedingly useful, and uses the syntax to format the output needed. In this code, I described each column divided by "Field" and listed the count in each "Field", the mean, the standard deviation, MIN, MAX, and 25%th, 50%th and 75%th percentiles' of each numeric columns.
 import pandas as pd
 
       # extracting BUPA data and adding names to it.
@@ -285,13 +285,13 @@ import pandas as pd
       print("Describe the entire dataframe", "\n")
       print(BUPA.describe(), "\n")
 
-> This code produce answers:
+> This code produced the follwing answers:
 
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/4_bupa.png)
 
 # Graphic
 
-> This section of my project I built some graphics to describe easylly my BUPA Dataset and for that I used Pandas Library, Matplolib Library and Seaborn. The first graphic is general visualization about the data.
+> In this section of my project, I built some graphics to easily describe my BUPA Dataset, and for that I used pandas, matplolib and seaborn libraries. The first graphic is a general visualization of the data.
 
       import pandas as pd
       import matplotlib.pyplot as plt
@@ -314,9 +314,9 @@ import pandas as pd
  
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/5_bupa.png)
    
-> Now I decided to show the relation betwen numbers of "Drinks" vs each variables of blood test.
-   import pandas as pd
+> Then I decided to show the relation betwen numbers of "Drinks" versus each variable of blood test.
 
+      import pandas as pd
       import seaborn as sns
       import matplotlib.pyplot as plt
 
@@ -350,7 +350,7 @@ import pandas as pd
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_SGOT.png)
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_GAMMAGT.png)
  
- > I used graphic type HISTOGRAM to also show my Data.
+ > I also used the HISTOGRAM graphic type to illustrate my data.
  
       import pandas as pd
       import seaborn as sns
@@ -413,7 +413,7 @@ import pandas as pd
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/7_bupa_Drinks.png)
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/7_bupa_field.png)
 
-> I appresented one more HISTOGRAM, but now they are together in the same code.
+> I presented one more HISTOGRAM, but now they were together in the same code.
 
       import pandas as pd
       import seaborn as sns
@@ -433,7 +433,7 @@ import pandas as pd
 
 ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/8_bupa.png)
 
-> At least I manipuleted my Data and use SCATTER PLOT to show it per numbers of field and Drinks vs Blood variables.
+> Finally, I manipulated my data and used SCATTER PLOT to show it per numbers of field and "Drinks" versus blood variable.
 
       import pandas as pd
       import seaborn as sns
@@ -481,11 +481,11 @@ import pandas as pd
  
 # Conclusion
  
-BUPA Datase is  a research that use blood variables to desmontration Liver Disorder. I found some project about it in Data Science, but all this project are in early stage and I have not seen much information. In my project I tried to use every knowledge learnt in the first semestre of "Programming & Scripts" subject at GMIT.
+The BUPA Liver Dissorders Dataset is research that uses blood variables to demontrate liver disorders. I found some projects on this in data science, but all of these projects are at an early stage and I have not seen much information. In my project, I tried to use all the knowledge imparted in the first semester of the "Programming & Scripts" subject at GMIT.
 
-Some of libraries of Python as "PANDAS", "MATPLOTLIB" and "SEABORN" are widely used in this project. PANDAS is a good tools to work with labell. MATPLOTLIB and SEABORN is a good tools to work with graphics and charts. I downloaded the data and saved it in type file CSV and I used this libraries to extracting it.
+Some of the libraries of Python such as "PANDAS", "MATPLOTLIB" and "SEABORN" are widely used in this project. PANDAS is a good tool to work with labels; MATPLOTLIB and SEABORN are good tools to work with graphics and charts. I downloaded the data and saved it in a CSV type file and I used these libraries to extract it.
 
-For myself this project is a challenge because every subject in IT is new and I had to have more pay attention because my previous degree is in Science and my focus was not in blood variables but in how to manipulate and show the data. I have learnt each IT subject separately and after get all knowledge together to finalized and made presentations it in GITHub site. For this project I needed to understand the dataset, how to manipulating it and which type of graphics have I chose.
+For me, this project was a challenge because every subject in IT was new, and I had to pay close attention because my previous degree had been in science, where my focus was not on blood variables, but on how to manipulate and illustrate data. I learnt each IT subject separately and after that, assimilated everything to finalize and make my presentation on the GITHub site. For this project, I needed to understand the dataset, how to manipulate it, and which type of graphics to choose.
  
 # References
 
