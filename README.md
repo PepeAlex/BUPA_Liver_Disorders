@@ -55,6 +55,7 @@ The BUPA Liver Disorders dataset was created by BUPA Medical Research Ltd on May
 7- _FIELD_ - selector field created by the BUPA researchers to split the data into train/test sets. https://www.openml.org/d/8
 
 # DESCRIPTION
+
 To complete this project, I have used some programmes and their libraries; below is a short description of each.
 
 ### PYTHON
@@ -74,6 +75,7 @@ https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/
 GitHub is a Git repository hosting service, but it adds many of its own features; while Git is a command line tool, GitHub provides a Web-based graphical interface. It also provides access control and several collaboration features, such as a wikis and basic task management tools for every project. https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/?guccounter=1&guce_referrer_us=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_cs=QdRUp8Vpgm9JNIVT4qpoSA
 
 # Analysing
+
 > Firstly, I downloaded the BUPA dataset from the website: https://archive.ics.uci.edu/ml/machine-learning-databases/liver-disorders/ ; and saved this file as "bupa.csv" on my computer. I opened the VSCode and created a file called 0_bupa.py. I imported the pandas library as "pd" and added column names to the data; then I wrote a code _BUPA= pd.read_csv(("bupa.csv")_, names=names). See below:
 
       import pandas as pd
