@@ -32,7 +32,7 @@ Autoimmune conditions involve the immune system mistakenly attacking healthy cel
 https://www.healthline.com/health/liver-diseases
 
 ## Liver disease aspect:
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/liver.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/liver.png)
 https://theceliacscene.com/hepatic-manifestations-celiac-disease/
 
 # BUPA
@@ -123,7 +123,7 @@ GitHub is a Git repository hosting service, but it adds many of its own features
 
 7. _Column_, column names of the data.
 
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/1_bupa.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/1_bupa.png)
 
 # Statistic
 
@@ -169,7 +169,7 @@ GitHub is a Git repository hosting service, but it adds many of its own features
 
 > Above is the result by CMDER
 
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/2_bupa.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/2_bupa.png)
 
 > Following the subject, I used the data to describe some statistical features such as MEAN, MIN, MAX, MEDIAN and MODE, and lastly, I used it to show each statistic features by each "FIELD".
 
@@ -258,11 +258,11 @@ GitHub is a Git repository hosting service, but it adds many of its own features
       print("\n")
 
 > The result by CMDER:
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/3_bupa.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/3_bupa.png)
 
 > One more type of statistic utilized was "pivot function". It is exceedingly useful, and uses the syntax to format the output needed. In this code, I described each column divided by "Field" and listed the count in each "Field", the mean, the standard deviation, MIN, MAX, and 25%th, 50%th and 75%th percentiles' of each numeric columns.
-import pandas as pd
 
+      import pandas as pd
       # extracting BUPA data and adding names to it.
       names = ['MCV','ALKPHOS','SGPT','SGOT','GAMMAGT','Drinks','Field']
       BUPA = pd.read_csv(("bupa.csv"), names=names)
@@ -287,9 +287,9 @@ import pandas as pd
       print("Describe the entire dataframe", "\n")
       print(BUPA.describe(), "\n")
 
-> This code produced the follwing answers:
+> This code produced the following answers:
 
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/4_bupa.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/4_bupa.png)
 
 # Graphic
 
@@ -314,7 +314,7 @@ import pandas as pd
       # plot the data
       plt.show()
  
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/5_bupa.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/5_bupa.png)
    
 > Then I decided to show the relation betwen numbers of "Drinks" versus each variable of blood test.
 
@@ -346,11 +346,11 @@ import pandas as pd
       sns.boxplot(x="Drinks", y="GAMMAGT", data=BUPA)
       plt.show()
 
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_MCV.png)
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_ALPHOS.png)
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_SGPT.png)
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_SGOT.png)
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/6_bupa_GAMMAGT.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/6_bupa_MCV.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/6_bupa_ALPHOS.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/6_bupa_SGPT.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/6_bupa_SGOT.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/6_bupa_GAMMAGT.png)
  
  > I also used the HISTOGRAM graphic type to illustrate my data.
  
@@ -407,13 +407,13 @@ import pandas as pd
       plt.ylabel('count')
       plt.show()
 
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/7_bupa_MCV.png)
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/7_bupa_ALPHOS.png)
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/7_bupa_SGPT.png)
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/7_bupa_SGOT.png)
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/7_bupa_GAMMAGT.png)
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/7_bupa_Drinks.png)
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/7_bupa_field.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/7_bupa_MCV.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/7_bupa_ALPHOS.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/7_bupa_SGPT.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/7_bupa_SGOT.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/7_bupa_GAMMAGT.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/7_bupa_Drinks.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/7_bupa_field.png)
 
 > I presented one more HISTOGRAM, but now they were together in the same code.
 
@@ -433,7 +433,7 @@ import pandas as pd
       # plot the graph
       plt.show()
 
-![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/8_bupa.png)
+![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/8_bupa.png)
 
 > Finally, I manipulated my data and used SCATTER PLOT to show it per numbers of field and "Drinks" versus blood variable.
 
@@ -475,11 +475,11 @@ import pandas as pd
       plt.title("Scatter Plot - 'GAMMAGT vs Drinks' of all 2 Fields")
       plt.show()
       
- ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/9_bupa_MCV.png)
- ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/9_bupa_ALPHOS.png)
- ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/9_bupa_SGPT.png)
- ![Alt tet](https://github.com/PepeAlex/BUPA_Project/blob/writing/9_bupa_SGOT.png)
- ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/writing/9_bupa_GAMMAGT.png)
+ ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/9_bupa_MCV.png)
+ ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/9_bupa_ALPHOS.png)
+ ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/9_bupa_SGPT.png)
+ ![Alt tet](https://github.com/PepeAlex/BUPA_Project/blob/master/9_bupa_SGOT.png)
+ ![Alt text](https://github.com/PepeAlex/BUPA_Project/blob/master/9_bupa_GAMMAGT.png)
  
 # Conclusion
  
