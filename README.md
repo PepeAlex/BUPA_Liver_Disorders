@@ -5,7 +5,7 @@
 ### Module: Programming & Scripting - 1º sem/2019
 ### Author: Alexander Pepe
 
-> This paper is research about the BUPA Liver Disorders dataset and its importance. I have written some Python codes to demonstrate this dataset more easily and more didactically. Finally, I will summarise my findings and present my conclusion. This project is part of the semester end requirement in the discipline of Programming & Scripting at GMIT.
+> This paper is a research about the BUPA Liver Disorders dataset and its importance. I have written some Python codes to demonstrate this dataset more easily and more didactically. Finally, I will summarise my findings and present my conclusion. This project is part of the semester end requirement in the discipline of Programming & Scripting at GMIT.
 
 
 > This project is avaiable at https://github.com/PepeAlex/BUPA_Project. In order to try it as a programer, some programms and libraries will need to be installed.
